@@ -1,0 +1,53 @@
+{
+  "name": "rollup-plugin-graphql-schema",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "A Rollup plugin which converts .graphql files to ES6 modules.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digital-512/rollup-plugin-graphql-schema.git"
+  },
+  "types": "types/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "rollup",
+    "plugin",
+    "graphql",
+    "es2015",
+    "npm",
+    "modules"
+  ],
+  "author": "Digital-512",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Digital-512/rollup-plugin-graphql-schema/issues"
+  },
+  "homepage": "https://github.com/Digital-512/rollup-plugin-graphql-schema#readme",
+  "peerDependencies": {
+    "rollup": ">=1.20.0",
+    "graphql": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "rollup": "^2.23.0"
+  },
+  "dependencies": {
+    "@graphql-tools/graphql-file-loader": "^6.0.15",
+    "@graphql-tools/load": "^6.0.15",
+    "@rollup/pluginutils": "^3.1.0",
+    "graphql": "^15.3.0"
+  }
+}
