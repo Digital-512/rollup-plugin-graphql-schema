@@ -28,6 +28,8 @@
     "graphql",
     "es2015",
     "npm",
+    "schema",
+    "ast",
     "modules"
   ],
   "author": "Digital-512",
@@ -45,8 +47,8 @@
     "rollup": "^2.23.0"
   },
   "dependencies": {
-    "@graphql-tools/graphql-file-loader": "^6.0.15",
-    "@graphql-tools/load": "^6.0.15",
+    "@graphql-tools/graphql-file-loader": "^6.0.16",
+    "@graphql-tools/load": "^6.0.16",
     "@rollup/pluginutils": "^3.1.0",
     "graphql": "^15.3.0"
   }

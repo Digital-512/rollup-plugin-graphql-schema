@@ -14,7 +14,7 @@ function graphql(options) {
     var filterExt = /\.(graphql|graphqls|gql|gqls)$/i;
 
     return {
-        name: 'graphql',
+        name: "graphql",
 
         // eslint-disable-next-line no-shadow
         transform: function transform(source, id) {
@@ -22,15 +22,15 @@ function graphql(options) {
 
             // load schema from file as GraphQLSchema object
             var schemaFile = load.loadSchemaSync(id, {
-                loaders: [
-                    new graphqlFileLoader.GraphQLFileLoader()
-                ]
+                loaders: [new graphqlFileLoader.GraphQLFileLoader()]
             });
 
             var EXPORT = null;
 
             // convert schema into AST
-            var parsed = JSON.stringify(graphql$1.parse(graphql$1.printSchema(schemaFile)));
+            var parsed = JSON.stringify(
+                graphql$1.parse(graphql$1.printSchema(schemaFile), { noLocation: true })
+            );
 
             if (options.exportAST) {
                 // export only AST
@@ -43,10 +43,10 @@ function graphql(options) {
 
             return {
                 code: EXPORT,
-                map: { mappings: '' }
-            }
+                map: { mappings: "" }
+            };
         }
-    }
+    };
 }
 
 module.exports = graphql;
