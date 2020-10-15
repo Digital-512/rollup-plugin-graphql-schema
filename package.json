@@ -47,9 +47,9 @@
     "rollup": "^2.23.0"
   },
   "dependencies": {
-    "@graphql-tools/graphql-file-loader": "^6.0.16",
-    "@graphql-tools/load": "^6.0.16",
-    "@rollup/pluginutils": "^3.1.0",
+    "@graphql-tools/graphql-file-loader": "^6.2.4",
+    "@graphql-tools/load": "^6.2.4",
+    "@rollup/pluginutils": "^4.0.0",
     "graphql": "^15.3.0"
   }
 }
