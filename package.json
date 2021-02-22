@@ -39,16 +39,16 @@
   },
   "homepage": "https://github.com/Digital-512/rollup-plugin-graphql-schema#readme",
   "peerDependencies": {
-    "graphql": ">=15.4.0",
-    "rollup": ">=2.33.2"
+    "graphql": ">=15.5.0",
+    "rollup": ">=2.39.0"
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.3",
     "rollup": "^2.23.0"
   },
   "dependencies": {
-    "@graphql-tools/graphql-file-loader": "^6.2.5",
-    "@graphql-tools/load": "^6.2.5",
+    "@graphql-tools/graphql-file-loader": "^6.2.7",
+    "@graphql-tools/load": "^6.2.7",
     "@rollup/pluginutils": "^4.1.0",
     "graphql": "^15.3.0"
   }
